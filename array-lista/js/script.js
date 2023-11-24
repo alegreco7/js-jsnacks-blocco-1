@@ -13,3 +13,10 @@ for (let frutto of frigorifero) {
         break;
     }
 }
+
+// Stampare il risultato in base alla presenza del cocomero
+if (cocomeroPresente) {
+    console.log("Trovato! Devo solo preparare il cocktail.");
+} else {
+    console.log("Oh no, devo uscire a comprare il cocomero!");
+}
