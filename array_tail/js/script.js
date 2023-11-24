@@ -9,6 +9,11 @@ for (let i = 0; i < numeroElementi; i++) {
 
 // Chiediamo all'utente quanti elementi dell'array voglia stampare (bonus)
 const numeroElementiDaStampare = parseInt(prompt("Quanti elementi dell'array vuoi stampare?"));
+
 if (numeroElementiDaStampare > numeroElementi) {
     console.log("Errore: il numero di elementi da stampare non può essere maggiore del numero totale di elementi dell'array.");
+} else {
+    // Stampiamo gli ultimi elementi specificati dall'utente
+    const ultimiElementi = arrayCasuale.slice(-numeroElementiDaStampare);
+    console.log("Ultimi", numeroElementiDaStampare, "elementi dell'array:", ultimiElementi);
 }
